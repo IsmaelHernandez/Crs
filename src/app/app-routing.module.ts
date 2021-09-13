@@ -10,7 +10,8 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
-  },  {
+  },
+  {
     path: 'reporte-novedades',
     loadChildren: () => import('./reporte-novedades/reporte-novedades.module').then( m => m.ReporteNovedadesPageModule)
   },
@@ -22,10 +23,7 @@ const routes: Routes = [
     path: 'reporte-incidencia',
     loadChildren: () => import('./reporte-incidencia/reporte-incidencia.module').then( m => m.ReporteIncidenciaPageModule)
   },
-  {
-    path: 'reporte-rondin',
-    loadChildren: () => import('./reporte-rondin/reporte-rondin.module').then( m => m.ReporteRondinPageModule)
-  },
+
 
 ];
 
