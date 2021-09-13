@@ -14,6 +14,10 @@ const routes: Routes = [
     path: 'reporte-novedades',
     loadChildren: () => import('./reporte-novedades/reporte-novedades.module').then( m => m.ReporteNovedadesPageModule)
   },
+  {
+    path: 'guardia',
+    loadChildren: () => import('./guardia/guardia.module').then( m => m.GuardiaPageModule)
+  },
 
 ];
 
