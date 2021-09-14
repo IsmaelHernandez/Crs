@@ -6,4 +6,61 @@
 
 <ion-content>
 
+
+  <ion-row style="border-bottom: groove;">
+    <ion-col col-12>
+    <ion-label >Nombre:</ion-label>
+    <ion-label >Cesar Alan de la Rosa Estrada</ion-label>
+  </ion-col>
+  </ion-row>
+
+  <ion-row style="border-bottom: groove;">
+    <ion-col col-12>
+    <ion-label >CAMPUS:</ion-label>
+    <ion-label >ANALCO</ion-label>
+  </ion-col>
+  </ion-row>
+
+  <ion-row style="border-bottom: groove;">
+    <ion-col col-12>
+    <ion-label >ESTADO:</ion-label>
+    <ion-label >PUEBLA</ion-label>
+  </ion-col>
+  </ion-row>
+
+  <ion-row style="border-bottom: groove;">
+    <ion-col col-12>
+    <ion-label >FECHA:</ion-label>
+    <ion-label >14/09/2021</ion-label>
+  </ion-col>
+  </ion-row>
+
+  <ion-row style="border-bottom: groove;">
+    <ion-col col-12>
+    <ion-label >HORARIO:</ion-label>
+    <ion-label >12 X 12</ion-label>
+  </ion-col>
+  </ion-row>
+
+
+<ion-grid>
+  <ion-row>
+      <ion-col col=25><b>No° Reporte</b></ion-col>
+      <ion-col col=25><b>HORA</b></ion-col>
+      <ion-col col=25><b>REPORTE</b></ion-col> 
+  </ion-row>
+
+  <ion-row wrap *ngFor="let item of listado; let index = index">
+      <ion-col col=25><b>{{item.id}}</b></ion-col>
+      <ion-col col=25><b>{{item.hora}}</b></ion-col>
+      <ion-col col=25><b>ENVIADO</b></ion-col>
+  </ion-row>
+
+</ion-grid>
+
+<ion-button routerLink="/form">Agregar</ion-button>
+
+
+
+
 </ion-content>
