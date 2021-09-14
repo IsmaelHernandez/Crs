@@ -6,12 +6,27 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+//importo mi componente menu
+import { MenuPrincipalComponent } from './components/menu-principal/menu-principal.component';
 
 @NgModule({
-  declarations: [AppComponent],
-  entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  declarations: [
+    AppComponent,
+    MenuPrincipalComponent
+  ],
+  entryComponents: [
+
+  ],
+  imports: [
+    BrowserModule, 
+    IonicModule.forRoot(),
+    AppRoutingModule],
+  providers: [
+    { provide: RouteReuseStrategy, 
+      useClass: IonicRouteStrategy 
+    }
+  ],
+  exports: [ MenuPrincipalComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
