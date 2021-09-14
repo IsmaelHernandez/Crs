@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'guardia',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {
@@ -23,6 +23,7 @@ const routes: Routes = [
     path: 'reporte-incidencia',
     loadChildren: () => import('./reporte-incidencia/reporte-incidencia.module').then( m => m.ReporteIncidenciaPageModule)
   },
+
 
 ];
 
