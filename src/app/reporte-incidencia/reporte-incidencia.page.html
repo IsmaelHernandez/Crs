@@ -7,6 +7,50 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content >
+
+  <form [formGroup]="guardia">
+    <ion-item>
+      <ion-label>Nombre Del Guardia:</ion-label>
+      <ion-input type="text" placeholder="Nombre" formControlName="nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Campus:</ion-label>
+      <ion-input type="text" placeholder="Campus" formControlName="campus"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Estado:</ion-label>
+      <ion-input  type="text" placeholder="Estado" formControlName="estado"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Fecha:</ion-label>
+      <ion-datetime formControlName="fecha" [value]="fechaN.toISOString()"display-format="DD MMMM YYYY"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>Horario:</ion-label>
+      <ion-datetime formControlName="horario" [value]="fechaN.toISOString()"displayFormat="h:mm A"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>Area:</ion-label>
+      <ion-input type="text" placeholder="Area" formControlName="area"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Titulo De La Incidencia:</ion-label>
+      <ion-input type="text" placeholder="Titulo de la Incidencia" formControlName="titulodelaincidencia"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Descripcion De La Anomalia:</ion-label>
+      <ion-input type="text" placeholder="Descripcion de la Anomalia" formControlName="descripciondelaanomalia"></ion-input>
+    </ion-item>
+    <!-- <ion-item>
+      <ion-label>Foto:</ion-label>
+      <ion-input formControlName="nombre"></ion-input>
+    </ion-item> -->
+    <p class="ion-padding"></p>
+ <p class="ion-text-center">
+   <ion-button>Enviar</ion-button>
+ </p>
+ </form>
+ 
 
 </ion-content>

@@ -23,12 +23,6 @@ const routes: Routes = [
     path: 'reporte-incidencia',
     loadChildren: () => import('./reporte-incidencia/reporte-incidencia.module').then( m => m.ReporteIncidenciaPageModule)
   },
-  {
-    path: 'menucrs',
-    loadChildren: () => import('./menucrs/menucrs.module').then( m => m.MenucrsPageModule)
-  },
-
-
 
 ];
 
